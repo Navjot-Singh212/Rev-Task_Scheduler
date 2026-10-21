@@ -108,7 +108,9 @@ if __name__=="__main__":
     add_task("Check Emails & Slacks", 15, 10, "admin", 2, True, False, None)
     add_task("Draft UI Wireframes", 60, 30, "creative", 4, True, False, None)
     add_task("Project Pitch Sync", 60, 60, "deep_work", 5, False, True, "18:00")  # Anchor
-
+    add_task("Morning Standup", 15, 15, "admin", 3, False, True, "08:00")
+    add_task("Team Architecture Sync", 45, 45, "deep_work", 5, False, True, "14:00")
+    add_task("Refactor Database Schema", 90, 20, "deep_work", 4, True, False, None)
     print("\nPending tasks in database:")
     for t in get_pending_tasks():
         print(t)
